@@ -1,59 +1,96 @@
-# CrochetPlatform
+# 🧶 CrochetPlatform - Guía para principiantes
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.14.
+Este proyecto fue desarrollado con [Angular CLI](https://angular.dev/tools/cli) versión `19.2.14`.  
+Sigue estos pasos para instalarlo y ejecutarlo en tu computadora de forma sencilla. 👇
 
-## Development server
+---
 
-To start a local development server, run:
+## 🔹 1. Requisitos previos
 
-```bash
-ng serve
+Antes de comenzar, asegúrate de tener instaladas estas herramientas:
+
+- [Node.js](https://nodejs.org/) (incluye npm)
+- [Git](https://git-scm.com/)
+- [Angular CLI](https://angular.dev/tools/cli)
+- [Visual Studio Code](https://code.visualstudio.com/) (opcional, pero recomendado)
+
+### ✅ Verifica si ya están instalados
+
+1. Abre la terminal:
+
+   - **Windows**: `Win + R`, escribe `cmd`, presiona Enter.
+   - **Mac**: Abre la app Terminal.
+   - **Linux**: Busca Terminal en el menú de aplicaciones.
+
+2. Escribe estos comandos uno por uno:
+
+   ```
+   node -v       # Verifica Node.js
+   npm -v        # Verifica npm
+   git --version # Verifica Git
+   ng version    # Verifica Angular CLI
+   ```
+
+3. Si alguno de los comandos da error o no se reconoce, instálalo:
+
+   - Instala Angular CLI si es necesario:
+     ```
+     npm install -g @angular/cli
+     ```
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+## 🔸 2. Clonar el repositorio
+
+1. Abre **Visual Studio Code**.
+2. Abre la terminal con `Ctrl + J` o desde el menú `Terminal > Nueva Terminal`.
+3. Ejecuta este comando para clonar el proyecto:
+
+   ```
+   git clone https://github.com/Geovanny251201/crochetPlatform.git
+   ```
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+4. Una vez clonado, abre Visual Studio Code y ve al menú `Archivo > Abrir carpeta...` y selecciona la carpeta **crochetPlatform** que se descargó.
+5. Una vez abierta la carpeta del proyecto en Visual Studio Code, abre una terminal integrada (`Ctrl + J`) y asegúrate de estar ubicado en la carpeta del proyecto:
+
+   ```
+   cd crochetPlatform
+   ```
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+## 🔸 3. Instalar las dependencias
+
+Con la terminal abierta dentro de la carpeta del proyecto, ejecuta:
+
+```
+npm install
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Esto instalará todas las dependencias necesarias del proyecto.
 
-## Code scaffolding
+----------------------------------------------------------------------------------------------------------------------------------------
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 🔸 4. Ejecutar el servidor de desarrollo
 
-```bash
-ng generate component component-name
-```
+1. Asegúrate de seguir en la carpeta `crochetPlatform`.
+2. Ejecuta:
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+   ```
+   ng serve
+   ```
 
-```bash
-ng generate --help
-```
+3. Espera a que aparezca el mensaje:
 
-## Building
+   ```
+   ✔ Compiled successfully.
+   ```
 
-To build the project run:
+4. Abre tu navegador y visita:  
+   👉 [http://localhost:4200](http://localhost:4200)
 
-```bash
-ng build
-```
+----------------------------------------------------------------------------------------------------------------------------------------
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+✅ ¡Listo! Ahora puedes ver y modificar el proyecto localmente.
