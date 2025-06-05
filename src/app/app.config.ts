@@ -6,6 +6,9 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { providePrimeNG } from 'primeng/config'
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import Aura from '@primeng/themes/aura';
+import { bootstrapApplication } from '@angular/platform-browser';
+import { ApplicationConfig } from '@angular/core';
+
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'learn', component: LearnComponent },
@@ -13,7 +16,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
 ];
 
-export const appConfig = {
+export const appConfig : ApplicationConfig= {
   providers: [
     provideRouter(routes),
     provideAnimationsAsync(), // Agregando animaciones
@@ -21,9 +24,13 @@ export const appConfig = {
      theme: {
         preset: Aura,
        options: {
-            darkModeSelector: false || 'none'
-        }
-      }
+            darkModeSelector: false || 'none'}},
     })
   ],
+  
 };
+ bootstrapApplication(LearnComponent, appConfig).catch((err) =>
+    console.error(err)
+);
+
+
